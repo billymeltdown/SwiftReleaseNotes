@@ -14,6 +14,7 @@ struct ChangeView: View {
     
     var body: some View {
         Text("\( showPrefix ? itemPrefix : "")\(change)")
+            .padding(.bottom, 2)
     }
 }
 
