@@ -1,0 +1,732 @@
+[
+  {
+    "build" : 854,
+    "changes" : [
+      "Updates interface for macOS 11 Big Sur",
+      "Adds support for Password AutoFill on Big Sur!",
+      "Updates macOS App Icon",
+      "Drops support for macOS older than 10.12"
+    ],
+    "date" : "2020-09-28T15:25:02Z",
+    "version" : "4.3.0"
+  },
+  {
+    "build" : 858,
+    "changes" : [
+      "Improves History list sorting by properly sorting most recently edited Entries at the top of the applicable section",
+      "Adds support for importing from Roboform and Bitwarden CSV",
+      "Fixes long Entry names not properly truncating in Entry View",
+      "Fixes crash when an error occurs during Local Folder sync"
+    ],
+    "date" : "2020-10-13T17:01:29Z",
+    "version" : "4.2.2"
+  },
+  {
+    "build" : 842,
+    "changes" : [
+      "Fixes improper deletion of sync.lock file in Dropbox if created by another client when cleaning up",
+      "Improves import from 1Password, LastPass, and Keeper CSVs",
+      "Adds support for importing from Enpass CSV",
+      "Fixes label dropdown on Entry view not re-sorting after adding a label via customize labels",
+      "Fixes Codebook not prompting for Touch ID when mirroring to an external display but the screen lid is open"
+    ],
+    "date" : "2020-07-09T18:58:30Z",
+    "version" : "4.2.1"
+  },
+  {
+    "blogURL" : "https:\/\/discuss.zetetic.net\/t\/codebook-4-2-released-website-rules-and-dark-mode-for-ios-and-android\/4482",
+    "build" : 836,
+    "changes" : [
+      "Adds a new Website Rules option to the Password Generator (at least one uppercase, lowercase, number, and symbol character)",
+      "Adds a new, easier to use Add Field control to the Entry view in Edit mode",
+      "The Remove Field button is now disabled when no Field is selected",
+      "Clears out any previously entered name in the Create New Label window",
+      "Adjusts Create New Label window to set the Mode selector to Plain Text when it first loads",
+      "Refreshes the Preferences window interface",
+      "Adds a dedicated Updates tab to the Preferences window",
+      "Adds a new Release Channel setting for easily switching between Beta and Release updates",
+      "Adds a new View License window for looking up your license information (Codebook menu > View License...)",
+      "The Compact Database feature and menu item have been renamed Vacuum Database to correspond with current functionality",
+      "Fixes some keyboard event bugs in Secret Agent that prevented Run Default Action from working correctly in some cases",
+      "Fixes issue with Keeper CSV Import",
+      "Fixes a repetitive error message that could occur when the Desktop WiFi service encounters an error on start-up",
+      "Corrects display of the \"I have a word list\" button",
+      "Removes duplicate sync.lock files on Drive"
+    ],
+    "date" : "2020-06-19T21:29:25Z",
+    "version" : "4.2.0"
+  },
+  {
+    "blogURL" : "https:\/\/discuss.zetetic.net\/t\/codebook-4-1-beta-testing\/4382",
+    "build" : 820,
+    "changes" : [
+      "Adds new advanced Sync options: Operations",
+      "Resets selected Operation to default after Sync",
+      "Updates the Sync menu, making the Start Sync item more clearly visible at the bottom and grouping other related menu items together",
+      "Updates the title of the Start Sync menu item to reflect the currently selected Operation",
+      "Fixes regression on Create New Category to drop user directly into the name field without any default title once the sheet presents",
+      "Provides Undo and Redo support for randomly generating passwords during Entry editing",
+      "Provides Undo support for field ordering\/dragging",
+      "Explicitly clears the Undo stack when Entry editing ends (instead of when another Entry is selected)",
+      "Ensures that auxiliary windows and panels requiring database access are properly closed on application lock",
+      "Fixes failure to persist field edits immediately after pasting a copied Entry",
+      "Fixes an issue improperly preventing application termination",
+      "Improves menu bar item validation when the Main Window is not the active window and when the Main Window is locked",
+      "Updates the Help menu with links to the latest documentation and a link to the Codebook mailing list",
+      "Help menu items have been rearranged and grouped according to function",
+      "Updates the Entry menu, specifically the group of field-specific items at the bottom to match changes to the Fields table context menu for the currently selected field",
+      "Adjusts the fields context menu to display the Show\/Hide item more visibly at the top, with a new mask\/unmask icon on the menu item",
+      "Adjusts the fields context menu to improve the grouping and separation of related menu items",
+      "Adjusts the fields context menu to no longer display the Show\/Hide item during editing"
+    ],
+    "date" : "2020-05-19T13:52:27Z",
+    "version" : "4.1.0"
+  },
+  {
+    "blogURL" : "https:\/\/discuss.zetetic.net\/t\/codebook-for-macos-4-0-2-released\/4249",
+    "build" : 800,
+    "changes" : [
+      "Integrity Check now reports number of affected records",
+      "Improve synchronization behavior on specific environments",
+      "Fixes out of memory crash",
+      "Fixes Types not properly sorted after adding new type in Entry interface",
+      "Fixes crash when leaving database info window open and initiating a WiFi sync",
+      "Fixes edge case unresponsive preference window crash",
+      "Fixes Sync Key scanning camera preview view not displaying on older macOS's",
+      "Fixes Sync Key QR Code Image graphics rendering bug on older macOS's",
+      "Fixes Secret Agent displaying incorrect results when typing quickly",
+      "Resolves crash when reporting an error during download files of Dropbox sync",
+      "Fixes release notes window being deactivated when displayed post login",
+      "Fixes failure to download changeset files error when syncing over WiFi",
+      "Adjusts the color of the sync status label in Preferences for better legibility in Light and Dark modes",
+      "Fixes failure to propagate field changes when quitting Codebook with pending edits",
+      "Improves recovery and error reporting when an error occurs during sync"
+    ],
+    "date" : "2020-02-06T20:27:50Z",
+    "version" : "4.0.2"
+  },
+  {
+    "blogURL" : "https:\/\/discuss.zetetic.net\/t\/updated-sync-behavior-in-codebook-4\/4146",
+    "build" : 785,
+    "changes" : [
+      "Corrects behavior of first-time sync",
+      "Improves behavior of migrating Codebook 3 databases",
+      "Fixes \"NSPlaceholderArray ... attempt to insert nil object\" error related to cloud service account name not being loaded",
+      "Updates the Delete Sync Key confirmation prompt to be less alarming, and adds a Learn More button that links to relevant documentation"
+    ],
+    "date" : "2019-12-20T22:38:38Z",
+    "version" : "4.0.1"
+  },
+  {
+    "build" : 778,
+    "changes" : [
+      "Updates the Sync feature with a new, faster, and more secure replication system",
+      "Updates the encryption Codebook uses to SQLCipher 4",
+      "Updates key derivation algorithm to PBKDF2-HMAC-SHA512 (previously PBKDF2-HMAC-SHA1)",
+      "Updates key derivation to use 250,000 iterations (previously 64,000)",
+      "Updates HMAC page protection algorithm to HMAC-SHA512 (previously HMAC-SHA1)",
+      "Adds new Dark Mode versions of the Database Icons",
+      "Fixes color of TOTP animation in Dark Mode",
+      "Makes Password Review available on-demand (right-click on any Password field to select Review Password, keyboard shortcut shift+command+R)",
+      "New Secret Agent getting started window under Help > Secret Agent",
+      "Updates Secret Agent window to use transparent title bar style",
+      "Fixes Auto Layout warnings on Secret Agent window",
+      "Fixes Secret Agent login animation improperly resizing window in some cases",
+      "Fixes crash when attempting to determine whether Touch ID authentication is available",
+      "Ensures that Sync only checks for Zetetic folder in the root of Google Drive",
+      "Fixes Delete Category confirmation sheet not being dismissed when action is chosen (macOS 10.10)",
+      "Fixes crash when viewing entry view (macOS 10.10)",
+      "No longer displays Release Notes after setup on a new installation"
+    ],
+    "date" : "2019-12-02T15:28:23Z",
+    "version" : "4.0.0"
+  },
+  {
+    "build" : 637,
+    "changes" : [
+      "Fixes crash that could occur when attempting to access preferences",
+      "Fixes edge case of Password Warnings not properly disappearing when no more warnings are present",
+      "Fixes Secret Agent login window ambiguous layout",
+      "Fixes Backups permissions error during revert\/delete",
+      "Fixes Backups unselection when presenting warning prompt"
+    ],
+    "date" : "2019-09-05T14:55:08Z",
+    "version" : "3.7.7"
+  },
+  {
+    "blogURL" : "https:\/\/discuss.zetetic.net\/t\/codebook-for-macos-3-7-6-released\/3549",
+    "build" : 634,
+    "changes" : [
+      "Fixes occasional failure of keyboard shortcut command-enter to launch a selected field, such as a website URL"
+    ],
+    "date" : "2019-03-27T13:47:30Z",
+    "version" : "3.7.6"
+  },
+  {
+    "build" : 632,
+    "changes" : [
+      "Fixes race condition when editing Note Entries",
+      "Fixes edge case crash when editing Note Entries",
+      "Fixes a crash that could occur when attempting to present a previously selected Entry"
+    ],
+    "date" : "2019-03-05T14:23:08Z",
+    "version" : "3.7.5"
+  },
+  {
+    "blogURL" : "https:\/\/www.zetetic.net\/blog\/2019\/02\/20\/codebook-for-mac-and-little-snitch\/",
+    "build" : 627,
+    "changes" : [
+      "Improves display of byte tallies on Database Info view",
+      "Adds entry name to Delete Entry confirmation prompt title to make destructive operation clearer",
+      "Fixes minor memory leak",
+      "Prevents automatic text substitutions on entry's fields",
+      "Fixes improperly displaying lock notification (when screen locks) if Codebook is already locked",
+      "Adds error alert when attempting to authenticate with Drive and Keychain access is denied",
+      "Fixes presentation of category chooser when creating a new entry with no categories already present",
+      "Fixes category select menu failing to show categories with duplicate titles",
+      "Fixes inconsistent font display in note entries, and increases the font size",
+      "Fixes failure to reset data detector highlights properly on note views (e.g. URLs, addresses) when enabled",
+      "Adds connection information for network request alert prompts in Little Snitch network monitor"
+    ],
+    "date" : "2019-02-19T15:32:00Z",
+    "version" : "3.7.4"
+  },
+  {
+    "build" : 613,
+    "changes" : [
+      "Fixes Secret Agent window not properly expanding to display search results in certain scenarios",
+      "Speeds up loading of Main Window after login",
+      "Improves initial user experience by dropping additional prompt to enable anonymous usage statistics"
+    ],
+    "date" : "2019-01-17T21:04:19Z",
+    "version" : "3.7.3"
+  },
+  {
+    "build" : 611,
+    "changes" : [
+      "Fixes text color of new notes created in Dark Mode",
+      "Fixes background color of Magnify view in Dark Mode",
+      "Fixes improperly displayed unmasked confirm password field when toggling masking during setup in Dark Mode",
+      "Fixes color of TOTP codes and their countdown labels when selected",
+      "Increases maximum display height for note fields on an entry",
+      "Fixes state of editing mode when switching notes"
+    ],
+    "date" : "2019-01-11T17:00:16Z",
+    "version" : "3.7.2"
+  },
+  {
+    "build" : 603,
+    "changes" : [
+      "Fixes clipping of Password Review and Password Warnings view on macOS 10.14 Mojave",
+      "Avoids prompting for Touch ID when unavailable because the built-in display is closed",
+      "Adds a new Learn More button for Secret Agent on the Preferences window",
+      "Updates tooltips and accessibility properties for Secret Agent on the Preferences window"
+    ],
+    "date" : "2018-11-28T23:14:31Z",
+    "version" : "3.7.1"
+  },
+  {
+    "build" : 598,
+    "changes" : [
+      "Adds support for Touch ID login on supported MacBook Pro models",
+      "Adds support for Dark Mode on macOS Mojave 10.14",
+      "Adds support for importing Keeper, LastPass, and 1Password CSV export files under File menu, Import",
+      "Adds blocker view to Main Window when minimized in the Dock"
+    ],
+    "date" : "2018-11-06T22:02:22Z",
+    "version" : "3.7.0"
+  },
+  {
+    "build" : 574,
+    "changes" : [
+      "Fixes bug caused by legacy location for sync rollback database",
+      "Fixes Copy tab bar button validation on the Entry view when no field is selected"
+    ],
+    "date" : "2018-06-28T22:27:55Z",
+    "version" : "3.6.6"
+  },
+  {
+    "build" : 570,
+    "changes" : [
+      "Adds logo artwork to the somewhat spartan Getting Started view",
+      "Fixes jumping cursor caused by space bar on Note Entries in certain scenarios"
+    ],
+    "date" : "2018-06-14T14:06:18Z",
+    "version" : "3.6.5"
+  },
+  {
+    "blogURL" : "https:\/\/discuss.zetetic.net\/t\/codebook-for-macos-3-6-4-released-smoother-operator\/2835",
+    "build" : 566,
+    "changes" : [
+      "Optimizes entry loading, speeding up login times",
+      "Optimizes generation of the options menu in the add new field button",
+      "Adds support for Select All on the entries list (keyboard shortcut command A when entries list is active responder)"
+    ],
+    "date" : "2018-05-08T14:11:01Z",
+    "version" : "3.6.4"
+  },
+  {
+    "build" : 561,
+    "changes" : [
+      "Enables search scope in search field, includes an option to add labels to the search",
+      "Adds a new Export Selected Entries option to the File > Export menu"
+    ],
+    "date" : "2018-04-19T16:27:19Z",
+    "version" : "3.6.2"
+  },
+  {
+    "build" : 557,
+    "changes" : [
+      "Fixes the new Password Review feature's \"Loading...\" placeholder improperly displaying when Password Review is deactivated",
+      "Fixes crash on OS X Yosemite 10.10 when editing records (whoops!)",
+      "Adjusts preference persistence on application start-up",
+      "Disables relaunch on login to mitigate unresponsive application window bug"
+    ],
+    "date" : "2018-04-06T14:20:40Z",
+    "version" : "3.6.1"
+  },
+  {
+    "build" : 550,
+    "changes" : [
+      "Adds a new Password Review feature that checks the password you're editing against the HaveIBeenPwned.com service, listing over half a billion hacked and stolen passwords (enable in Preferences)",
+      "Adopts a new custom display for the autocomplete suggestions shown while editing fields",
+      "Fixes the autocomplete suggestions being improperly dimissed by word boundaries on editing (typing \"http:\/\/\" no longer dismisses matching suggestions)",
+      "Improves layout and appearance consistency of Password Warnings and Secret Agent Action suggestions",
+      "Fixes a regression where clicking Dock icon did not show the Main Window",
+      "Fixes account name label under Sync menu after Google Drive authorization",
+      "Improvements to entry and category icon chooser menu, including the size and layout, load time, and selection handling",
+      "Fixes crash when using up and down arrow keys on the Views\/Categories list",
+      "The Release Notes are now selectable and can be copied to the clipboard",
+      "Password reset now includes instructions for updating other copies"
+    ],
+    "date" : "2018-03-27T13:42:37Z",
+    "version" : "3.6.0"
+  },
+  {
+    "build" : 525,
+    "changes" : [
+      "Fixes Magnify Window not properly appearing on macOS El Capitan",
+      "Secret Agent search results now filter out entries with no fields",
+      "Secret Agent Default Action now selects fields based on \"First in the List\" rather than prioritizing Email over Username and Password over PIN",
+      "Allows dashes in TOTP codes",
+      "Fixes inability to delete\/revert backups on macOS 10.10",
+      "Fixes not properly reloading Secret Agent search results after modifying data through the main window",
+      "Fixes improperly displaying entry details in Secret Agent after entry was deleted by main window",
+      "Fixes Secret Agent incorrectly displaying Note Entries in search results",
+      "Fixes window height animation race condition which was causing empty results to display instead of resizing"
+    ],
+    "date" : "2018-02-01T23:32:52Z",
+    "version" : "3.5.2"
+  },
+  {
+    "build" : 514,
+    "changes" : [
+      "Guards against category\/entry selections that aren't present in the current list",
+      "Adds Magnify field value (⌘ + Y)",
+      "TOTP field text color turns red when down to the last 3 seconds",
+      "Ensures any presented sheets are dismissed when Codebook locks",
+      "Fix Sync > Unlink menu item not showing Dropbox accout name after initially linking",
+      "No longer automatically recreates password field label if deleted",
+      "Updates add field label control after editing labels through Customize Labels",
+      "Add field label control no longer truncates longer label names",
+      "Adds tooltips for bottom bar buttons",
+      "Adjusts layout of Entry details field table to fix clipping, impropper alignment, and misalignment of TOTP progress\/seconds"
+    ],
+    "date" : "2018-01-05T21:11:21Z",
+    "version" : "3.5.1"
+  },
+  {
+    "build" : 508,
+    "changes" : [
+      "A brand new icon style and fifty new icons, bringing the set to 200! 🎄",
+      "Increased row height for Views, Categories, and Entries lists",
+      "Fixes duplicating text display glitch on the Entry view after dragging a field to the previously selected field location",
+      "Fixes clipping of masked values in Secret Agent on macOS High Sierra 10.13",
+      "Fixes types sort order preference regression",
+      "Ensures the Entry view reloads in response to all label edits in Customize Labels",
+      "Floats Categories group row"
+    ],
+    "date" : "2017-12-18T14:55:10Z",
+    "version" : "3.5.0"
+  },
+  {
+    "build" : 500,
+    "changes" : [
+      "Includes mitigation for preference persistence bug on High Sierra 10.13.1 🐛"
+    ],
+    "date" : "2017-11-16T18:04:46Z",
+    "version" : "3.3.3"
+  },
+  {
+    "build" : 495,
+    "changes" : [
+      "Fixes next (tab) key loop on Secret Agent search view and details view",
+      "Fixes over-eager polling of cloud service user profile for sync when settings change",
+      "Fixes TOTP row display glitch in Secret Agent details view",
+      "Greatly improves display of bundled record icons",
+      "Fixes crash on record paste",
+      "Fixes sort of icons in icon chooser view"
+    ],
+    "date" : "2017-11-07T21:17:56Z",
+    "version" : "3.3.2"
+  },
+  {
+    "build" : 487,
+    "changes" : [
+      "Adds an exclude characters field feature to the Password Generator",
+      "Resumes regular entry selection after Search field is cleared",
+      "Ensures License Window is closed and Main Window is activated upon license install via link for trial-expired customers",
+      "Fixes escape key cancellation of edits to field values",
+      "Fixes failure to consistently put newly added fields in edit mode",
+      "Fixes some edge case crashes in WiFi sync",
+      "Fixes race condition when copying and pasting entries",
+      "Fixes failure to update category label on entry view after category name change",
+      "Secret Agent Action fields now support arbitrary text",
+      "Secret Agent window will reload the entry it was previous displaying in case an edit to the entry has occurred",
+      "Fixes split view improperly resizing when displaying a note entry in certain cases",
+      "Fixes incorrect edit toggling behavior when no entry is selected",
+      "Fixes update date showing at bottom of window when no entry is selected",
+      "Fixes newly added entry not being selected properly when previously editing the name of another entry",
+      "Fixes incorrectly not ending editing when adding a new category",
+      "Updates duplicate removal logic when syncing",
+      "Now defaults new categories to an empty name",
+      "Add cancel button to category edit sheet",
+      "Disables selection of password warnings tableview",
+      "Increases Diceware password generator default length to 6",
+      "Diceware password generator maintains separate length preference"
+    ],
+    "date" : "2017-09-28T12:46:02Z",
+    "version" : "3.3.1"
+  },
+  {
+    "build" : 476,
+    "changes" : [
+      "Enables Automatic Reference Counting",
+      "Fixes thread race conditions on login and after sync completes",
+      "Fixes multiple memory leaks",
+      "Removes use of deprecated macOS APIs"
+    ],
+    "date" : "2017-07-18T14:27:29Z",
+    "version" : "3.3.0"
+  },
+  {
+    "build" : 469,
+    "changes" : [
+      "Fixes blank Codebook window on Yosemite when updating with Google Drive linked",
+      "Fixes Secret Agent bug in Safari when inserting more than 16 characters into certain sites",
+      "Adds new Compact Database feature to File menu",
+      "Fixes memory leaks",
+      "Fixes issues with the Merge Labels Window"
+    ],
+    "date" : "2017-06-26T20:23:14Z",
+    "version" : "3.2.6"
+  },
+  {
+    "build" : 463,
+    "changes" : [
+      "Fixes crash when WiFi disconnects\/computer sleeps in certain situations when Desktop WiFi Sync is selected",
+      "Updates Google Drive sync to use updated API",
+      "Updates Dropbox sync to latest SDK",
+      "Fixes failure to properly load all new labels on Import until full data reload"
+    ],
+    "date" : "2017-05-30T15:26:04Z",
+    "version" : "3.2.5"
+  },
+  {
+    "build" : 456,
+    "changes" : [
+      "Fixes improper switching of sync preference",
+      "Fixes improper invalidation of menu items after canceling a sync operation",
+      "Fixes incorrect alphabetical sorting of types when exporting to CSV",
+      "Properly dismisses sync sheet if sync completes while main window is hidden",
+      "Highlights the location of the searched term within a record when selecting it from the search results list"
+    ],
+    "date" : "2017-05-03T20:07:48Z",
+    "version" : "3.2.4"
+  },
+  {
+    "build" : 447,
+    "changes" : [
+      "Updates SQLCipher to version 3.4.1",
+      "Adds a new Export Favorites option under the File menu",
+      "Adds Credits and Copyrights link to the About Codebook information window",
+      "The Run Default Action command in Secret Agent (keyboard shortcut command R) is available on the search results view",
+      "Adds PIN fields to Run Default Action if a password field is not found",
+      "Adjusts observation of editing notes to avoid extraneous saves when no edit has taken place",
+      "Corrects missing first responder and keyboard control on Setup views",
+      "Fixes improper dismissal of Setup view",
+      "Fixes loss of state on the selected Sync type radio button in Preferences",
+      "Fixes improper masking of newly added fields in some situations",
+      "Fixes accessibility of unsupported window tabbing",
+      "Fixes the \"missing lock_icon\" log message",
+      "Fixes inconsistency in escaping label names in Export"
+    ],
+    "date" : "2017-04-04T12:14:08Z",
+    "version" : "3.2.3"
+  },
+  {
+    "build" : 439,
+    "changes" : [
+      "Adds new Word List options for generating Diceware passwords",
+      "Word List defaults to Electronic Frontier Foundation list",
+      "Ends edit mode when starting WiFi sync to ensure pending edits are persisted",
+      "Fixes issue where Integrity Check wouldn't resolve orphaned entries\/fields if the Unfiled category already existed",
+      "Updates Dropbox sync to latest SDK release for bug fixes",
+      "Fixes crash related to blank entry names"
+    ],
+    "date" : "2017-03-08T21:38:37Z",
+    "version" : "3.2.2"
+  },
+  {
+    "build" : 431,
+    "changes" : [
+      "Adds support for selecting multiple categories and entries in the Main Window",
+      "Adds check in Auto Lock to avoid locking while sync is in progress",
+      "Fixes regression on persisting a label change",
+      "Fixes updated\/created dates not displaying when Region is set to a 24 hour display mode (i.e. UK), but date\/ time is set to 12 hour display mode",
+      "Updates Dropbox compatibility for bug fixes"
+    ],
+    "date" : "2017-02-06T16:07:05Z",
+    "version" : "3.2.1"
+  },
+  {
+    "blogURL" : "https:\/\/discuss.zetetic.net\/t\/codebook-for-macos-beta-3-2-0-build-423-run-default-action-merge-labels\/1917",
+    "build" : 426,
+    "changes" : [
+      "Adds new Run Default Action feature to Secret Agent",
+      "Adds new Merge Label feature to Customize Labels",
+      "Displays number of fields to be deleted on Remove Label confirmation prompt in Customize Labels",
+      "Remove Label will no longer prompt for confirmation if there are no fields assigned to the label being deleted",
+      "Updates Dropbox sync to use API version 2",
+      "Includes Secret Agent patch for macOS Sierra 10.12.3 beta"
+    ],
+    "date" : "2017-01-13T19:59:35Z",
+    "version" : "3.2.0"
+  },
+  {
+    "build" : 419,
+    "changes" : [
+      "Fixes Secret Agent bug on macOS Sierra 10.12.2 improperly adjusting case of characters on insert",
+      "Fixes persistence of Secret Agent preference to user defaults"
+    ],
+    "date" : "2016-12-19T16:33:48Z",
+    "version" : "3.1.6"
+  },
+  {
+    "build" : 416,
+    "changes" : [
+      "Fixes bug where certain password generator insertions were not persisting",
+      "Optimizes row height calculations of multiline fields in fields table",
+      "Fixes issue with Secret Agent entering improper values when using certain international key layouts"
+    ],
+    "date" : "2016-12-09T21:53:27Z",
+    "version" : "3.1.5"
+  },
+  {
+    "build" : 412,
+    "changes" : [
+      "Fixes inconsistency in behavior after cancelling Secret Agent login",
+      "Maintains the same locking state for Secret Agent and the Main Window",
+      "Fixes Edit (command+E) from Secret Agent's Entry view",
+      "Fixes Local Folder Sync not persisting Sandboxed folder access permission",
+      "Fixes crash at startup on Yosemite"
+    ],
+    "date" : "2016-11-28T15:39:29Z",
+    "version" : "3.1.4"
+  },
+  {
+    "build" : 406,
+    "changes" : [
+      "Fixes password weakness warnings showing improperly when generating a random password",
+      "Shows password weakness warnings when generating a potentially weak random password",
+      "Fixes obscured password weakness warnings and Secret Agent Action suggestions towards the bottom of view",
+      "Fixes truncation of release notes"
+    ],
+    "date" : "2016-11-08T16:30:10Z",
+    "version" : "3.1.3"
+  },
+  {
+    "build" : 401,
+    "changes" : [
+      "Fixes plain text exporter duplicating entries"
+    ],
+    "date" : "2016-10-19T15:30:10Z",
+    "version" : "3.1.2"
+  },
+  {
+    "build" : 399,
+    "changes" : [
+      "Attempts to fix post-login crash on selection of previously viewed record"
+    ],
+    "date" : "2016-10-13T16:11:09Z",
+    "version" : "3.1.1"
+  },
+  {
+    "build" : 398,
+    "changes" : [
+      "Adds new password weakness warnings",
+      "Adds new Action commands for Secret Agent",
+      "Various bug and crashes fixed",
+      "Fixes bug preventing WiFi sync with Codebook for Android from working correctly",
+      "Fixes sorting of entries list after Journal sort preference changes"
+    ],
+    "date" : "2016-10-03T13:07:11Z",
+    "version" : "3.1.0"
+  },
+  {
+    "build" : 388,
+    "changes" : [
+      "Import and Export support a boolean Favorite column in CSV data",
+      "Import and Export support \"Entry Icon\" and \"Category Icon\" columns",
+      "Allows for untitled entries during Import",
+      "Fixes Google Drive sync failure"
+    ],
+    "date" : "2016-08-31T16:30:53Z",
+    "version" : "3.0.14"
+  },
+  {
+    "build" : 387,
+    "changes" : [
+      "Fixes validation of unmasked password fields on setup view for master password"
+    ],
+    "date" : "2016-08-22T19:45:30Z",
+    "version" : "3.0.13"
+  },
+  {
+    "build" : 386,
+    "changes" : [
+      "Fixes race condition in Secret Agent launch behavior",
+      "Adjust keyboard shortcut for Add Field to command-plus"
+    ],
+    "date" : "2016-08-04T17:01:32Z",
+    "version" : "3.0.12"
+  },
+  {
+    "blogURL" : "https:\/\/discuss.zetetic.net\/t\/codebook-for-macos-version-3-0-11-released\/",
+    "build" : 384,
+    "changes" : [
+      "Adds new Edit shortcut button to Secret Agent (command E)",
+      "Fixes Remove Entry toolbar button validation",
+      "Corrects Edit Entry button validation",
+      "New first time setup experience",
+      "Preserves record selection after sync completes",
+      "Fixes crash on launch when backup URL is missing",
+      "Adjusts first responder on edit entry"
+    ],
+    "date" : "2016-07-19T17:59:00Z",
+    "version" : "3.0.11"
+  },
+  {
+    "blogURL" : "https:\/\/discuss.zetetic.net\/t\/codebook-for-mac-update-3-0-9\/",
+    "build" : 374,
+    "changes" : [
+      "Improves layout of the password generator and defaults for length\/words",
+      "Adds a Reload button to the password generator",
+      "Fixes improper display of the password generator",
+      "Improves display of Release Notes"
+    ],
+    "date" : "2016-06-17T21:40:37Z",
+    "version" : "3.0.9"
+  },
+  {
+    "blogURL" : "https:\/\/discuss.zetetic.net\/t\/codebook-for-mac-3-0-8-import-fixed-diceware\/",
+    "build" : 371,
+    "changes" : [
+      "Fixes reload of categories after import",
+      "Adds new Diceware option to Password Generator"
+    ],
+    "date" : "2016-06-08T13:19:06Z",
+    "version" : "3.0.8"
+  },
+  {
+    "blogURL" : "https:\/\/discuss.zetetic.net\/t\/codebook-for-os-x-update-3-0-7\/1376",
+    "build" : 367,
+    "changes" : [
+      "Fixes Main Window crash on OS X 10.8 and 10.9 (10.10 and 10.11 unaffected)"
+    ],
+    "date" : "2016-05-25T13:05:42Z",
+    "version" : "3.0.7"
+  },
+  {
+    "blogURL" : "https:\/\/discuss.zetetic.net\/t\/codebook-for-os-x-update-3-0-6\/1354",
+    "build" : 357,
+    "changes" : [
+      "New History view added to the Views list",
+      "Create an Entry (⌘ N) or a Note (option ⌘ N) any time (when no category is selected Codebook will prompt for one)",
+      "Updates the embedded SQLCipher library to the latest release, 3.4.0",
+      "Adds Edit button to the Main Window’s tab (key event) loop",
+      "Changes Lock Window keyboard shortcut to ⌘ L",
+      "Changes Show Customize Labels keyboard shortcut to shift ⌘ L",
+      "Various performance improvements and bug fixes"
+    ],
+    "date" : "2016-05-17T20:11:30Z",
+    "version" : "3.0.6"
+  },
+  {
+    "blogURL" : "https:\/\/discuss.zetetic.net\/t\/codebook-for-os-x-3-0-4-released\/1271\/2",
+    "build" : 345,
+    "changes" : [
+      "Fixes field row display turning black when editing large fields",
+      "Adds support for Cut (command+X) to move entries without drag and drop",
+      "Allows dragging an entry in a View list or Search results (e.g. Favorites) into a category to change its category assignment",
+      "Adds a keyboard shortcut command+hyphen for removing a selected field while editing an entry",
+      "Adds support for Undo (command+Z) and Redo (shift+command+Z) while editing an entry",
+      "Improves cut\/copy\/paste\/delete validation",
+      "Updates controls with new accessibility labels and help descriptions"
+    ],
+    "date" : "2016-03-31T19:24:24Z",
+    "version" : "3.0.4"
+  },
+  {
+    "blogURL" : "https:\/\/www.zetetic.net\/blog\/2016\/3\/29\/codebook-journal-and-improved-touch-id-security\/",
+    "build" : 337,
+    "changes" : [
+      "Adds new Journal view showing all your Note entries in one place",
+      "Fixes document save dialog sheet being shown improperly",
+      "Adds a plain text export format",
+      "Removes EntryID from CSV export",
+      "Improves speed and reliability of CSV import",
+      "Import no longer supports bulk update (columns named EntryID will be treated as any other field data)",
+      "Adds new search-in-note field on note entry view (use the return key to cycle through results)",
+      "Enables data detectors on the note entry view (links, addresses, etc)",
+      "Adds preference for data detectors on the note entry view (disabled by default)",
+      "Updates Categories view to distinguish between Categories and Views",
+      "Fixes bug in Main Window and Secret Agent presentation",
+      "Fixes crash on OS X 10.8 for TOTP fields",
+      "Fixes several deprecation warnings",
+      "Fixes CA Transaction warning",
+      "Fixes entries view count label display",
+      "Allows for Toolbar customization"
+    ],
+    "date" : "2016-03-08T19:12:00Z",
+    "version" : "3.0.3"
+  },
+  {
+    "blogURL" : "https:\/\/discuss.zetetic.net\/t\/codebook-for-os-x-3-0-2-released\/1082",
+    "build" : 326,
+    "changes" : [
+      "Preserves Main Window split view borders",
+      "Corrects various dialogs still displaying previous app name, STRIP",
+      "Fixes crash on Export when Notes are present in data",
+      "Export format updated to export Note data in \"Entry Note\" column in CSV",
+      "Import format updated to import \"Entry Note\" fields as Note records",
+      "Adjusts Categories and Entries listing cell heights to be the same height",
+      "Adds Favorites as a drag-and-drop target for adding records to Favorites",
+      "Adds Recents view, displaying recently accessed records"
+    ],
+    "date" : "2016-01-19T15:34:05Z",
+    "version" : "3.0.2"
+  },
+  {
+    "blogURL" : "https:\/\/www.zetetic.net\/blog\/2015\/12\/14\/introducing-codebook-3-strip-renamed-codebook\/",
+    "build" : 321,
+    "changes" : [
+      "STRIP renamed to Codebook",
+      "New icon, new look!",
+      "Adds Favorites",
+      "Adds note entries"
+    ],
+    "date" : "2016-01-04T17:00:00Z",
+    "version" : "3.0.1"
+  }
+]
