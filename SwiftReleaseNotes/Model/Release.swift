@@ -13,6 +13,7 @@ struct Release: Hashable, Codable {
     var date: String
     var blogURL: String?
     var changes: [String]
+    var isBeta: Bool?
     
     var link: URL? {
         if (blogURL != nil) {
@@ -22,13 +23,18 @@ struct Release: Hashable, Codable {
         }
     }
     
-    static let isoDateFormatter: ISO8601DateFormatter = {
-        let formatter = ISO8601DateFormatter()
-        return formatter
-    }()
+    static let isoDateFormatter: ISO8601DateFormatter = ISO8601DateFormatter()
     
     var releaseDate: Date? {
         return Self.isoDateFormatter.date(from: date)
+    }
+    
+    var imageName: String {
+        if (isBeta != nil && isBeta! == true) {
+            return "betaReleaseIcon"
+        } else {
+            return "currentReleaseIcon"
+        }
     }
 }
 

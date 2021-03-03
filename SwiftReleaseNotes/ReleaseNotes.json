@@ -8,7 +8,8 @@
       "Drops support for macOS older than 10.12"
     ],
     "date" : "2020-09-28T15:25:02Z",
-    "version" : "4.3.0"
+    "version" : "4.3.0",
+    "isBeta" : true
   },
   {
     "build" : 858,

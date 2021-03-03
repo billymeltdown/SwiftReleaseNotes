@@ -19,7 +19,7 @@ struct ReleaseView: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Image("currentReleaseIcon")
+                Image(release.imageName)
                 VStack(alignment: .leading) {
                     HStack {
                         Text("Version \(release.version)")
