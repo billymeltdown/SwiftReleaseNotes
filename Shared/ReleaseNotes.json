@@ -8,8 +8,7 @@
       "Drops support for macOS older than 10.12"
     ],
     "date" : "2020-09-28T15:25:02Z",
-    "version" : "4.3.0",
-    "isBeta" : true
+    "version" : "4.3.0"
   },
   {
     "build" : 858,
@@ -20,7 +19,8 @@
       "Fixes crash when an error occurs during Local Folder sync"
     ],
     "date" : "2020-10-13T17:01:29Z",
-    "version" : "4.2.2"
+    "version" : "4.2.2",
+    "isBeta" : true
   },
   {
     "build" : 842,

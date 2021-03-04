@@ -34,9 +34,7 @@ struct ReleaseView: View {
                     Text(release.releaseDate!, formatter: Self.dateFormatter)
                         .font(.subheadline)
                         .foregroundColor(.secondary)
-                }
-                
-                
+                }    
             }
             // Nesting a List in a List may only be valid if navigation is used...
 //            List {

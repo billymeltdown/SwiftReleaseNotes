@@ -95,6 +95,10 @@
 			isa = PBXGroup;
 			children = (
 				139AAF9325F028C900EA419E /* SharedAssets.xcassets */,
+				139AAF5B25EFEF7700EA419E /* ReleaseNotes.json */,
+				13DDC74C25EFEE4400CDFC53 /* Views */,
+				13DDC74B25EFEE3D00CDFC53 /* Model */,
+				13DDC73B25EFEE1400CDFC53 /* SwiftReleaseNotesApp.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -121,10 +125,6 @@
 		13DDC73A25EFEE1400CDFC53 /* SwiftReleaseNotes */ = {
 			isa = PBXGroup;
 			children = (
-				139AAF5B25EFEF7700EA419E /* ReleaseNotes.json */,
-				13DDC74C25EFEE4400CDFC53 /* Views */,
-				13DDC74B25EFEE3D00CDFC53 /* Model */,
-				13DDC73B25EFEE1400CDFC53 /* SwiftReleaseNotesApp.swift */,
 				13DDC73D25EFEE1400CDFC53 /* ContentView.swift */,
 				13DDC73F25EFEE1500CDFC53 /* Assets.xcassets */,
 				13DDC74425EFEE1500CDFC53 /* Info.plist */,
