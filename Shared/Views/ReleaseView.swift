@@ -12,7 +12,7 @@ struct ReleaseView: View {
     
     static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateStyle = .short
+        formatter.dateStyle = .long
         return formatter
     }()
     
@@ -21,20 +21,18 @@ struct ReleaseView: View {
             HStack {
                 Image(release.imageName)
                 VStack(alignment: .leading) {
+                    Text("Version \(release.version)")
+                        .font(.title)
                     HStack {
-                        Text("Version \(release.version)")
-                            .font(.title)
+                        Text(release.releaseDate, formatter: Self.dateFormatter)
+                            .foregroundColor(.secondary)
                         Spacer()
                         if release.link != nil {
                             Link("Blog", destination: release.link!)
+                                .foregroundColor(.blue)
                         }
                     }
-                    Text("Build \(release.build)")
-                        .font(.subheadline)
-                    Text(release.releaseDate!, formatter: Self.dateFormatter)
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                }    
+                }
             }
             // Nesting a List in a List may only be valid if navigation is used...
 //            List {
