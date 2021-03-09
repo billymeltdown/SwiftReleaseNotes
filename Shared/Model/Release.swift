@@ -25,8 +25,8 @@ struct Release: Hashable, Codable {
     
     static let isoDateFormatter: ISO8601DateFormatter = ISO8601DateFormatter()
     
-    var releaseDate: Date? {
-        return Self.isoDateFormatter.date(from: date)
+    var releaseDate: Date {
+        return Self.isoDateFormatter.date(from: date)!
     }
     
     var imageName: String {
