@@ -34,12 +34,6 @@ struct ReleaseView: View {
                     }
                 }
             }
-            // Nesting a List in a List may only be valid if navigation is used...
-//            List {
-//                ForEach(release.changes, id: \.self) { change in
-//                    ChangeView(change: change)
-//                }
-//            }
             ForEach(release.changes, id: \.self) { change in
                 ChangeView(change: change)
             }

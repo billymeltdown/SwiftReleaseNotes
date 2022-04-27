@@ -13,7 +13,6 @@ struct Release: Hashable, Codable {
     var date: String
     var blogURL: String?
     var changes: [String]
-    var isBeta: Bool?
     
     var link: URL? {
         if (blogURL != nil) {
@@ -30,11 +29,7 @@ struct Release: Hashable, Codable {
     }
     
     var imageName: String {
-        if (isBeta != nil && isBeta! == true) {
-            return "betaReleaseIcon"
-        } else {
-            return "currentReleaseIcon"
-        }
+        "currentReleaseIcon"
     }
 }
 

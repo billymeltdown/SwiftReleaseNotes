@@ -14,7 +14,7 @@ struct ReleasesList: View {
         List {
             ForEach(modelData.releases) { release in
                 ReleaseView(release: release)
-                    .buttonStyle(PlainButtonStyle())
+//                    .buttonStyle(PlainButtonStyle())
             }
         }
     }
